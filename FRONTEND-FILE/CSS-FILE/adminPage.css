@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color:darkcyan;
+}
+
+
+/* ALL PRODUCTS CSS */
+.top{
+    /* border: 1px solid red; */
+    color: darkcyan;
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    font-size: 40px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#container>button{
+    border: 0px solid grey;
+    background-color: cornflowerblue;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#container>button:hover{
+    background-color: crimson;
+    transition: 1s;
+}
+
+.appenddiv{
+    /* border: 2px solid blue; */
+    margin-top: 20px;
+}
+
+.show{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.show>img{
+    width: 100px;
+}
+
+/* .change{
+   border: 1px solid rebeccapurple;
+
+} */
+.change>input{
+   outline: none;
+   width: 155px;
+   height: 50px;
+   font-size: 20px;
+   border: 0px;
+   padding-left: 10px;
+   border-radius: 5px;
+}
+.btn{
+    text-align: center;
+}
+.btn>button{
+    background-color:crimson;
+    color: white;
+    margin-top: 15px;
+    height: 55px;
+    width: 200px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.totalProduct{
+    /* border: 1px solid red; */
+    width: 250px;
+    margin: 25px;
+    margin-left: 55px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* MENS PRODUCTS CSS */
+.mens{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 30px auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.addmensProducts{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 5px;
+    gap: 20px;
+}
+.addmensProducts>input{
+    width: 233px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 3px;
+    border: 0px;
+    padding-left: 15px;
+}
+.addmensProducts>input:last-child{
+    width: 250px;
+    height: 45px;
+    background-color:crimson;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+.addmensProducts>input:last-child:hover{
+    background-color:lightseagreen;
+}
+
+
+/* WOMENS PRODUCTS CSS */
+.womens{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 30px auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.addwomensProducts{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 5px;
+    gap: 20px;
+}
+.addwomensProducts>input{
+    width: 233px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 3px;
+    border: 0px;
+    padding-left: 15px;
+}
+.addwomensProducts>input:last-child{
+    width: 250px;
+    height: 45px;
+    background-color:crimson;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+.addwomensProducts>input:last-child:hover{
+    background-color:lightseagreen;
+}
