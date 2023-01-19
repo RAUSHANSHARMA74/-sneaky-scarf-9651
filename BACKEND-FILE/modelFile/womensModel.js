@@ -7,7 +7,7 @@ const womensSchema = mongoose.Schema({
     brand : String,
     image : String,
     color : String,
-    price : Number,
+    price : String,
     rating : Number,
     size : String,
 })

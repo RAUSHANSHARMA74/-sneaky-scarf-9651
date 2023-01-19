@@ -135,23 +135,24 @@ admin.delete("/usersDelete/:id", async (req, res)=>{
     }
 })
 
-admin.delete("/allProductsDelete/:id", async (req, res)=>{
-    try {
-        let id = req.params.id
-        let men = await MensModel.findByIdAndDelete({_id:id})
-        let women = await WomensModel.findByIdAndDelete({_id:id})
-        console.log(women.length)
-        if(men.length>0){
-            res.send({msg:"mens products is deleted"})
-        }else if(women.length>0){
-            res.send({msg:"womens products is deleted"})
-        }else{
-            res.send("something went wrong")
-        }
-    } catch (error) {
-        console.log("something went wrong in all products delete")
-    }
-})
+// admin.delete("/allProductsDelete/:id", async (req, res)=>{
+//     try {
+//         const id = req.params.id
+//         const men = await MensModel.findByIdAndDelete({_id:id})
+//         await WomensModel.findByIdAndDelete({_id:id})
+//         // console.log(women)
+//         let data = []
+//         data.push(men)
+        
+//         if(data.length>0){
+//             res.send({msg:"mens products is deleted"})
+//         }else{
+//             res.send({msg:"womens products is deleted"})
+//         }
+//     } catch (error) {
+//         console.log("something went wrong in all products delete")
+//     }
+// })
 
 
 //DELETE MENS PRODUCTS

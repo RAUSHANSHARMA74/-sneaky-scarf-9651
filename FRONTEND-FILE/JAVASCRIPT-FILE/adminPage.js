@@ -39,13 +39,14 @@ function showAllProductsData(allProductsData){
                 <input type="text" name="" id="" value="${item.color}" readonly>
                 <input type="text" name="" id="" value="${item.rating}" readonly>
                 <input type="text" name="" id="" value="${item.price}" readonly>
-                <div class="btn">
-                    <button class="update" data-id="${item._id}" >UPDATE</button>
-                    <button class="delete" data-id="${item._id}" >DELETE</button>
-                </div>
+               
             </div>
         </div>
         `
+    //     <div class="btn">
+    //     <button class="update" data-id="${item._id}" >UPDATE</button>
+    //     <button class="delete" data-id="${item._id}" >DELETE</button>
+    // </div>
     })
     show.innerHTML = data.join("")
     let deleteBtn = document.querySelectorAll(".delete")
@@ -60,7 +61,7 @@ function showAllProductsData(allProductsData){
 
 async function deleteId(id){
     try {
-        let res = await fetch(`http://localhost:4500/admin/menDelete/${id}`,{
+        let res = await fetch(`http://localhost:4500/admin/allProductsDelete/${id}`,{
             method : "DELETE",
             headers : {
                 "Content-Type" : "application/json"
@@ -88,13 +89,13 @@ mens.addEventListener("click", async () => {
     add.innerHTML = `
         <div class="mens">
             <form action="" class="addmensProducts">
-                <input type="text" name="" id="title" placeholder="title">
-                <input type="text" name="" id="brand" placeholder="brand">
-                <input type="text" name="" id="image" placeholder="image">
-                <input type="text" name="" id="price" placeholder="price">
-                <input type="text" name="" id="rating" placeholder="rating">
-                <input type="text" name="" id="size" placeholder="size">
-                <input type="text" name="" id="color" placeholder="color" >
+                <input type="text" name="" id="title" placeholder="title" required>
+                <input type="text" name="" id="brand" placeholder="brand" required>
+                <input type="text" name="" id="image" placeholder="image" required>
+                <input type="text" name="" id="price" placeholder="price" required>
+                <input type="text" name="" id="rating" placeholder="rating" required>
+                <input type="text" name="" id="size" placeholder="size" required>
+                <input type="text" name="" id="color" placeholder="color" required>
                 <input type="submit">
             </form>
         </div>
@@ -184,13 +185,13 @@ womens.addEventListener("click", async () => {
     add.innerHTML = `
         <div class="womens">
             <form action="" class="addwomensProducts">
-                <input type="text" name="" id="title" placeholder="title">
-                <input type="text" name="" id="brand" placeholder="brand">
-                <input type="text" name="" id="image" placeholder="image">
-                <input type="text" name="" id="price" placeholder="price">
-                <input type="text" name="" id="rating" placeholder="rating">
-                <input type="text" name="" id="size" placeholder="size">
-                <input type="text" name="" id="color" placeholder="color" >
+                <input type="text" name="" id="title" placeholder="title" required>
+                <input type="text" name="" id="brand" placeholder="brand" required>
+                <input type="text" name="" id="image" placeholder="image" required>
+                <input type="text" name="" id="price" placeholder="price" required>
+                <input type="text" name="" id="rating" placeholder="rating" required>
+                <input type="text" name="" id="size" placeholder="size" required>
+                <input type="text" name="" id="color" placeholder="color" required>
                 <input type="submit">
             </form>
         </div>

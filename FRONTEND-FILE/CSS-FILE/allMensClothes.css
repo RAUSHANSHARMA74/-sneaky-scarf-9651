@@ -14,6 +14,7 @@
     align-items: center;
     font-size: 12px;
     padding:5px 10px;
+    
 }
 .top a{
     color: white;
@@ -47,6 +48,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
+    margin-bottom: 50px;
 }
 .section>div>a{
    margin-left: 50px;
@@ -125,144 +127,57 @@
     margin-top: 10px;
 }
 
-
-/* Image */
-
-
-
-/* Image */
-
-.discount{
-    /* border: 1px solid red; */
-    background-color: black;
-    color: white;
-    height: 130px;
+/* ========================CLOTHES WRAP================================ */
+.header{
+    /* border: 1px solid rebeccapurple; */
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 15px;
+    border-bottom: 1px solid grey;
 }
-.childDiscount1{
-    /* border: 1px solid blue; */
-    margin-left: 90px;
-}
-.childDiscount1>p:nth-child(1){
-    font-size: 30px;
-}
-.childDiscount1>p:nth-child(2){
-    font-size: 50px;
-}
-.childDiscount2{
-    margin-right: 50px;
-}
-.childDiscount2>p{
-    font-size: 11px;
-}
-.childDiscount2>a{
-    color: white;
-}
-
-/* Image */
-
-
-/* image */
-
-.difClothes+p{
-    /* border: 1px solid red; */
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-/* image */
-
-
-/* image */
-
-.ourcoummunity>p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 50px ;
+.header>p:nth-child(2){
+    font-size: 20px;
+    margin-left: 250px;
+    font-weight: 540;
     
 }
-
-.ourcoummunity+p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 50px;
+.header>div>span{
+    color: grey;
+}
+.header>div>select{
+    border: 1px solid grey;
+    outline: none;
+    height: 25px;
+    width: 160px;
+    font-size: 17px;
 }
 
-
-
-/* image */
-
-
-/* image */
-
-
-.fashion+button{
-    border: 2px solid black;
-    background-color: white;
-    font-weight: bold;
-    margin: 50px;
-    margin-left: 42%;
-    padding: 15px 50px;
-}
-.fashion+button:hover{
-    border: 2px solid grey;
-    background-color: grey;
-    color: white;
-}
-.easy{
-    /* border: 1px solid red; */
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
-    border-top: 1px solid grey;
-    padding-top: 50px;
-}
-.easyWay{
+.imageWrap{
+    border: 1px solid red;
     display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
-    text-align: center;
-}
-.easyWay>div{
-    /* border: 1px solid red; */
-    border-right: 2px solid grey;
-    width: 100%;
-    height: 150px;
-}
-.easyWay a{
-    color: black;
-    margin-top: 50px;
-}
+    justify-content: space-around;
 
-.easyWay>div>p:nth-child(1){
-    font-weight: bold;
-    font-family:serif;
-    font-size: 20px;
-    margin-top: 10px;
+}
+.sort{
+    border: 1px solid blue;
+}
+.sort>h3, .sort>p{
+    margin: 20px;
+}
+.sort>select{
+    border: 0px;
+    outline: none;
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid grey;
+    margin: 20px;
 }
 
-.easyWay>div>p:nth-child(2){
-    margin-top: 20px;
-    font-weight: bold;
-}
 
-.easyWay>div>p:nth-child(4){
-    margin-bottom: 20px;
-}
-
-/* image */
-
-
-/* image */
+/* ========================FOOTER PART============================ */
 
 .footer{
     /* border: 1px solid red; */
