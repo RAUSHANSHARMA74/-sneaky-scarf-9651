@@ -66,28 +66,32 @@ body{
    border: 1px solid rebeccapurple;
 
 } */
-.change>input{
-   outline: none;
-   width: 155px;
-   height: 50px;
-   font-size: 20px;
-   border: 0px;
-   padding-left: 10px;
-   border-radius: 5px;
+
+.input{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 7px auto;
+    gap: 5px;
+
+}
+
+.input>input{
+    height: 25px;
+    outline: none;
+    border: 0px;
+    padding-left: 5px;
 }
 .btn{
-    text-align: center;
+    /* border: 1px solid red; */
+    margin: 5px auto;
 }
 .btn>button{
-    background-color:crimson;
-    color: white;
-    margin-top: 15px;
-    height: 55px;
-    width: 200px;
     border: 0px;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
+    color: white;
+    background-color: crimson;
+    padding: 10px 20px;
+    border-radius: 3px;
 }
 
 .totalProduct{
@@ -101,85 +105,90 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.allProductsShow{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.allProductsShow>img{
+    width: 100px;
+}
+
+.allProductsDetails{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+.allProductsDetails>span{
+    /* border: 1px solid blue; */
+    background-color: white;
+    width: 200px;
+    color: teal;
+}
+.allProductsDetails input{
+    border: 0px ;
+    outline: none;
+}
+
 /* MENS PRODUCTS CSS */
 .mens{
     /* border: 1px solid red; */
     width: 90%;
     margin: 30px auto;
-    height: 200px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    padding: 10px 0px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.addmensProducts{
+.addProducts{
     /* border: 1px solid green; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border-radius: 5px;
-    gap: 20px;
+    gap: 10px;
 }
-.addmensProducts>input{
-    width: 233px;
-    height: 40px;
+.addProducts>input{
+    width: 230px;
+    height: 30px;
     font-size: 20px;
     outline: none;
     border-radius: 3px;
     border: 0px;
     padding-left: 15px;
 }
-.addmensProducts>input:last-child{
-    width: 250px;
-    height: 45px;
+.addProducts>input:last-child{
+    width: 247px;
     background-color:crimson;
     color: white;
     border-radius: 5px;
     border: 0px;
 }
-.addmensProducts>input:last-child:hover{
+.addProducts>input:last-child:hover{
     background-color:lightseagreen;
 }
 
 
 /* WOMENS PRODUCTS CSS */
-.womens{
+.women{
     /* border: 1px solid red; */
     width: 90%;
     margin: 30px auto;
-    height: 200px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    padding: 10px 0px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.addwomensProducts{
-    /* border: 1px solid green; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border-radius: 5px;
-    gap: 20px;
-}
-.addwomensProducts>input{
-    width: 233px;
-    height: 40px;
-    font-size: 20px;
-    outline: none;
-    border-radius: 3px;
-    border: 0px;
-    padding-left: 15px;
-}
-.addwomensProducts>input:last-child{
-    width: 250px;
-    height: 45px;
-    background-color:crimson;
-    color: white;
-    border-radius: 5px;
-    border: 0px;
-}
-.addwomensProducts>input:last-child:hover{
-    background-color:lightseagreen;
-}

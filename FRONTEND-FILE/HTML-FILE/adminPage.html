@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../CSS-FILE//adminPage.css">
 </head>
+
 <body>
-    <div class="top">DATA HANDAL BY ADMIN</div>
+    <div class="top">DATA HANDALE BY ADMIN</div>
     <div id="container">
         <button class="allProducts">ALL PRODUCTS</button>
         <button class="mensProducts">MENS PRODUCTS</button>
@@ -18,68 +20,38 @@
     </div>
 
 
-    <p class="totalProduct" ></p>
-    <div class="add">
-        <!-- <div class="mens">
-            <form action="" class="addmensProducts">
-             <input type="text" name="" id="title" placeholder="title" required>
-             <input type="text" name="" id="brand" placeholder="brand">
-             <input type="text" name="" id="image" placeholder="image">
-             <input type="text" name="" id="price" placeholder="price">
-             <input type="text" name="" id="rating" placeholder="rating">
-             <input type="text" name="" id="size" placeholder="size">
-             <input type="text" name="" id="color" placeholder="color" >
-             <input type="submit">
-            </form>
-         </div> -->
-    </div>
+    <p class="totalProduct"></p>
+
+    <div class="add"></div>
+
     <div class="appenddiv">
-        
-        <!-- <div class="show">
-            <img src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/01-january/1227-digital-20770-mlp/-dt/icon-2-dt.jpg" alt="">
-            <div class="change">
-                <input type="text" name="" id="" value="" >
-                <input type="text" name="" id="" value="" readonly>
-                <input type="text" name="" id="" value="" readonly>
-                <input type="text" name="" id="" value="" readonly>
-                <input type="text" name="" id="" value="" readonly>
-                <input type="text" name="" id="" value="" readonly>
-                <div class="btn">
-                    <button class="update">UPDATE</button>
-                <button class="delete">DELETE</button>
-                </div>
-            </div>
-        </div> -->
+       
+    </div>
 
-        <!-- <div class="mens">
-           <form action="" class="addmensProducts">
-            <input type="text" name="" id="title" placeholder="title">
-            <input type="text" name="" id="brand" placeholder="brand">
-            <input type="text" name="" id="image" placeholder="image">
-            <input type="text" name="" id="price" placeholder="price">
-            <input type="text" name="" id="rating" placeholder="rating">
-            <input type="text" name="" id="size" placeholder="size">
-            <input type="text" name="" id="color" placeholder="color" >
-            <input type="submit">
-           </form>
-        </div> -->
-<!-- 
-        <div class="womens">
-            <form action="" class="addwomensProducts">
-             <input type="text" name="" id="title" placeholder="title">
-             <input type="text" name="" id="brand" placeholder="brand">
-             <input type="text" name="" id="image" placeholder="image">
-             <input type="text" name="" id="price" placeholder="price">
-             <input type="text" name="" id="rating" placeholder="rating">
-             <input type="text" name="" id="size" placeholder="size">
-             <input type="text" name="" id="color" placeholder="color" >
-             <input type="submit">
-            </form>
-         </div> -->
-
-
+    <div class="main">
+        <div class="input">
+            <input type="text" name="" id="title" placeholder="title" value="${item.title}" required>
+            <input type="text" name="" id="category" placeholder="category" value="${item.category}" required>
+            <input type="text" name="" id="description" placeholder="description" value="${item.description}" required>
+            <input type="text" name="" id="discount" placeholder="discount" value="${item.discount}" required>
+            <input type="text" name="" id="brand" placeholder="brand" value="${item.brand}" required>
+            <input type="text" name="" id="image1" placeholder="image1" value="${item.image[0]}" required>
+            <input type="text" name="" id="image2" placeholder="image2" value="${item.image[1]}" required>
+            <input type="text" name="" id="image3" placeholder="image3" value="${item.image[2]}" required>
+            <input type="text" name="" id="image4" placeholder="image4" value="${item.image[3]}" required>
+            <input type="text" name="" id="stock" placeholder="stock" value="${item.stock}" required>
+            <input type="text" name="" id="price" placeholder="price" value="${item.price}" required>
+            <input type="text" name="" id="rating" placeholder="rating" value="${item.rating}" required>
+            <input type="text" name="" id="size" placeholder="size" value="${item.size}" required>
+            <input type="text" name="" id="color" placeholder="color" value="${item.color}" required>
+        </div>
+        <div class="action">
+            <button class="update" data-id="${item._id}">UPDATE</button>
+            <button class="delete" data-id="${item._id}">DELETE</button>
+        </div>
     </div>
 
 </body>
+
 </html>
 <script src="../JAVASCRIPT-FILE/adminPage.js"></script>

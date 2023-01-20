@@ -4,9 +4,13 @@ const mongoose = require("mongoose")
 
 const womensSchema = mongoose.Schema({
     title : String,
+    description : String,
+    discount : String,
     brand : String,
-    image : String,
+    image : Array,
     color : String,
+    stock : String,
+    category : String,
     price : String,
     rating : Number,
     size : String,

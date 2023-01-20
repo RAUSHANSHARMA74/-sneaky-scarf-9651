@@ -75,7 +75,7 @@ admin.get("/womensProducts", async (req, res)=>{
 
 
 //ADD PRODUCTS IN MENS
-admin.post("/addMens", async (req, res)=>{
+admin.post("/addMen", async (req, res)=>{
     try {
         const addNewProducts = new MensModel(req.body)
         await addNewProducts.save()
@@ -101,8 +101,15 @@ admin.post("/addWomen", async (req, res)=>{
 //UPDATE MENS PRODUCTS 
 admin.patch("/updateMens/:id", async (req, res)=>{
     try {
+        let data =  req.body
+        let obj = {}
+        for(let key in data){
+            if(data[key]!=""){
+               obj[key]=data[key]
+            }
+        }
         const id = req.params.id
-        await MensModel.findByIdAndUpdate({_id:id}, req.body)
+        await MensModel.findByIdAndUpdate({_id:id}, obj)
         res.send({msg:"men updated"})
     } catch (error) {
         console.log("something went wrong in admin products data")
@@ -135,24 +142,7 @@ admin.delete("/usersDelete/:id", async (req, res)=>{
     }
 })
 
-// admin.delete("/allProductsDelete/:id", async (req, res)=>{
-//     try {
-//         const id = req.params.id
-//         const men = await MensModel.findByIdAndDelete({_id:id})
-//         await WomensModel.findByIdAndDelete({_id:id})
-//         // console.log(women)
-//         let data = []
-//         data.push(men)
-        
-//         if(data.length>0){
-//             res.send({msg:"mens products is deleted"})
-//         }else{
-//             res.send({msg:"womens products is deleted"})
-//         }
-//     } catch (error) {
-//         console.log("something went wrong in all products delete")
-//     }
-// })
+
 
 
 //DELETE MENS PRODUCTS
