@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color: teal;
+}
+.admin{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+    background-color: cadetblue;
+}
+
+.formdiv{
+    /* border: 1px solid red; */
+    width: 30%;
+    height: 300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+form{
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form>input{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+form>input:last-child{
+    width: 310px;
+    background-color:crimson;
+    color: white;
+}
