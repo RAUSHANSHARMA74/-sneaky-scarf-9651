@@ -162,7 +162,20 @@
 }
 
 /* Image */
+.difClothes{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 30px auto;
+}
 
+.difClothes img{
+    width: 100%;
+}
+.difClothes a{
+   color: black;
+}
 
 /* image */
 
@@ -178,7 +191,36 @@
 
 
 /* image */
+.styleClothes{
+    /* border: 1px solid rebeccapurple; */
+    width: 83%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.styleClothes>div{
+    /* border: 1px solid blue; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.styleClothes img{
+    width: 97%;
+}
+.styleClothes>div>div{
+    position:absolute;
+    text-align: center;
+}
 
+.styleClothes p{
+    color: white;
+    font-size: 30px;
+}
+.styleClothes a{
+    color: white;
+}
 
 /* image */
 
@@ -200,10 +242,43 @@
 
 
 /* image */
+.ourcoummunity{
+    /* border: 1px solid red; */
+    margin: 50px auto;
+    padding: 30px 0px;
+    padding-bottom: 100px;
+    background-color: lightgrey;
 
-
+}
+.communityClothes{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 20px;
+    padding: 0px 20px;
+}
+.communityClothes img{
+    width: 100%;
+}
+.communityClothes p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+.communityClothes a{
+    color: black;
+}
 /* image */
 
+.fashion{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.fashion>img{
+    width: 22%;
+}
 
 .fashion+button{
     border: 2px solid black;
@@ -260,7 +335,41 @@
 }
 
 /* image */
+.labelLOve{
+    /* border: 1px solid red; */
+    display: flex;
 
+}
+.labelImage{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+}
+.labelbtn{
+    /* border: 1px solid rebeccapurple; */
+    padding: 50px 0px;
+    padding-left: 25px;
+    padding-right: 30px;
+
+}
+.labelbtn>p{
+    font-size: 50px;
+    font-weight: 700;
+}
+.labelbtn>button{
+    padding: 20px 50px;
+    color: black;
+    background-color: white;
+}
+
+.labelImage img{
+    width: 95%;
+    margin-bottom: 20px;
+}
+.labelImage a{
+    color: black;
+}
 
 /* image */
 
@@ -306,496 +415,3 @@
     text-decoration: none;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

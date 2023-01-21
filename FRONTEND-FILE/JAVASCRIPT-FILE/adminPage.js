@@ -2,10 +2,6 @@ let add = document.querySelector(".add")
 let total = document.querySelector(".totalProduct")
 let show = document.querySelector(".appenddiv")
 
-let target = document.querySelector(".update")
-target.addEventListener("click", ()=>{
-    console.log(event)
-})
 
 //---ALL PRODUCTS
 let all = document.querySelector(".allProducts")
@@ -204,7 +200,7 @@ async function addmensData(obj) {
         console.log("something went wrong in add men data")
     }
 }
- 
+
 
 //=======DELETE MEN PRODUCT
 async function deleteManProduct(id) {

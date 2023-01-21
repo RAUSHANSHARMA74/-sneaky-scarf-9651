@@ -162,11 +162,24 @@
 }
 
 /* Image */
+.difClothes{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 30px auto;
+}
 
+.difClothes img{
+    width: 100%;
+}
+.difClothes a{
+   color: black;
+}
 
 /* image */
 
-.difClothes+p{
+.styleClothes+p{
     /* border: 1px solid red; */
     height: 100px;
     display: flex;
@@ -178,9 +191,53 @@
 
 
 /* image */
+.styleClothes{
+    /* border: 1px solid red; */
+    width: 63%;
+    margin:30px auto;  
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.styleClothes img{
+    width: 100%;
+}
+.styleClothes p{
+    font-size: 30px;
+    margin: 15px 0px;
+    font-weight: 600;
+}
 
+.styleClothes a{
+    color: black;
+    font-size: 18px;
+}
 
 /* image */
+.icons{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+.icons img{
+    width: 100%;
+}
+
+.icons p{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.icons a{
+    color: black;
+    font-size: 18px;
+}
 
 .ourcoummunity>p{
     text-align: center;
@@ -200,7 +257,33 @@
 
 
 /* image */
+.ourcoummunity{
+    /* border: 1px solid red; */
+    margin: 50px auto;
+    padding: 30px 0px;
+    padding-bottom: 100px;
+    background-color: lightgrey;
 
+}
+.communityClothes{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 20px;
+    padding: 0px 20px;
+}
+.communityClothes img{
+    width: 100%;
+}
+.communityClothes p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+.communityClothes a{
+    color: black;
+}
 
 /* image */
 
@@ -222,7 +305,7 @@
     /* border: 1px solid red; */
     text-align: center;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 100px;
     border-top: 1px solid grey;
     padding-top: 50px;
 }
@@ -260,7 +343,24 @@
 }
 
 /* image */
+.fashion{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
 
+.fashion img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.fashion a{
+    color: black;
+    font-size: 18px;
+}
 
 /* image */
 
