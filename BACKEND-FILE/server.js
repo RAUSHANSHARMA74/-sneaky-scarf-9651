@@ -2,8 +2,8 @@
 const express = require("express")
 const {connection} =  require("./configFile/connection")
 const {users} = require("./routerFile/userRouter")
-
-
+const {carts} = require("./routerFile/userCart")
+const {authorization} = require("./middleWareFile/authentication")
 
 const cors = require("cors")
 const {admin} = require("./routerFile/adminRouter")
@@ -13,8 +13,10 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 app.use("/admin", admin)
-
 app.use("/users", users)
+app.use("/cartProducts", carts)
+app.use(authorization)
+
 
 
 

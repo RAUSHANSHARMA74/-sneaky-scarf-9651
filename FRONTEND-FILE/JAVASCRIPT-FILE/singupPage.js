@@ -2,17 +2,13 @@
 let register = document.querySelector(".clear")
 let btntext = document.querySelector(".singin")
 let pText = document.querySelector(".registerbtn>p")
-let email = document.querySelector("#email")
-let firstname = document.querySelector("#firstname")
-let lastname = document.querySelector("#lastname")
-let password = document.querySelector("#password")
-let select =  document.querySelector("#select")
+
 
 let singup = document.querySelector(".singin")
-singup.addEventListener("click", ()=>{
-    
+singup.addEventListener("click", () => {
+
     register.innerHTML = ""
-    if(btntext.innerText=="SING IN"){
+    if (btntext.innerText == "SING IN") {
         btntext.innerText = "SING UP"
         pText.innerText = "FASHION INSIDER"
         register.innerHTML = `
@@ -32,19 +28,19 @@ singup.addEventListener("click", ()=>{
         `
         let email = document.querySelector("#email")
         let password = document.querySelector("#password")
-      
+
         let login = document.querySelector(".login")
-        login.addEventListener("click", ()=>{
+        login.addEventListener("click", () => {
             let obj = {
-                email : email.value,
-                password : password.value,
+                email: email.value,
+                password: password.value,
             }
             matchEmail(obj)
         })
 
-    }else if(btntext.innerText == "SING UP"){
+    } else if (btntext.innerText == "SING UP") {
         btntext.innerText = "SING IN"
-        pText.innerText  = "Sign up with email"
+        pText.innerText = "Sign up with email"
         register.innerHTML = `
         <div class="email">
         <p>Email Address</p>
@@ -71,71 +67,140 @@ singup.addEventListener("click", ()=>{
         <div>
             <p>Country</p>
             <select name="" id="">
-                <option value="">United States</option>
-                <option value="">APO</option>
-                <option value="">DPO</option>
-                <option value="">FPO</option>
-                <option value="">Australia</option>
-                <option value="">Austria</option>
-                <option value="">Barbados</option>
-                <option value="">Belgium</option>
-                <option value="">Belize</option>
-                <option value="">Brazil</option>
-                <option value="">Bulgaria</option>
-                <option value="">Canada</option>
-                <option value="">China</option>
-                <option value="">cyprus</option>
-                <option value="">Denmark</option>
-                <option value="">EI Salvador</option>
-                <option value="">Finland</option>
-                <option value="">France</option>
-                <option value="">Germany</option>
-                <option value="">Greece</option>
-                <option value="">Hong Kong</option>
-                <option value="">Hungary</option>
-                <option value="">Indonesia</option>
-                <option value="">Ireland</option>
-                <option value="">Israel</option>
-                <option value="">Italy</option>
-                <option value="">Jamaica</option>
-                <option value="">Japan</option>
-                <option value="">Liechtenstein</option>
-                <option value="">Luxembourg</option>
-                <option value="">Macau</option>
-                <option value="">Mexico</option>
-                <option value="">Monao</option>
-                <option value="">Netherlands</option>
-                <option value="">Norway</option>
-                <option value="">Poland</option>
-                <option value="">Portugal</option>
-                <option value="">Singapore</option>
-                <option value="">South Korea</option>
-                <option value="">Spain</option>
-                <option value="">Sweden</option>
-                <option value="">Switzerland</option>
-                <option value="">Taiwan</option>
-                <option value="">Thailand</option>
-                <option value="">Trinidad and Tobago</option>
-                <option value="">United Kingdom</option>
+            <option value="United States">United States</option>
+            <option value="APO">APO</option>
+            <option value="DPO">DPO</option>
+            <option value="FPO">FPO</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Belize">Belize</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Canada">Canada</option>
+            <option value="China">China</option>
+            <option value="cyprus">cyprus</option>
+            <option value="Denmark">Denmark</option>
+            <option value="EI Salvador">EI Salvador</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Greece">Greece</option>
+            <option value="Hong Kong">Hong Kong</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Israel">Israel</option>
+            <option value="Italy">Italy</option>
+            <option value="Jamaica">Jamaica</option>
+            <option value="Japan">Japan</option>
+            <option value="Liechtenstein">Liechtenstein</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Macau">Macau</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Monao">Monao</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Norway">Norway</option>
+            <option value="Poland">Poland</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Singapore">Singapore</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Spain">Spain</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Taiwan">Taiwan</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+            <option value="United Kingdom">United Kingdom</option>
             </select>
         </div>
     </div>
 
-    <button class="create"  id="account">CREATE ACCOUNT</button>
+    <button class="create" >CREATE ACCOUNT</button>
     <p>By creating, you agree to
         <a href="">Express Insider Terms & conditions</a><br>
         <a href="">Privacy Policy</a> and
         <a href="">Terms & Conditions</a>
     </p>
         `
+
+        let registerbtn = document.querySelector(".create")
+        registerbtn.addEventListener("click", () => {
+            let email = document.querySelector("#email")
+            let firstname = document.querySelector("#firstname")
+            let lastname = document.querySelector("#lastname")
+            let password = document.querySelector("#password")
+            let select = document.querySelector("#select")
+
+            let obj = {
+                email: email.value,
+                name: firstname.value + " " + lastname.value,
+                password: password.value
+            }
+            // console.log(obj)
+            regiseruser(obj)
+        })
     }
 })
 
-let createAccount = document.getElementById("account")
-createAccount.addEventListener("click", ()=>{
-    console.log("hello")
-})
+let email = document.querySelector("#email")
+let firstname = document.querySelector("#firstname")
+let lastname = document.querySelector("#lastname")
+let password = document.querySelector("#password")
+let select = document.querySelector("#select")
 
+let createAccount = document.querySelector(".create")
+createAccount.addEventListener("click", () => {
+    let obj = {
+        email: email.value,
+        name: firstname.value + " " + lastname.value,
+        password: password.value,
+        country: select.value
+    }
+    // console.log(obj)
+    regiseruser(obj)
+
+})
+//register user
+let regiseruser = async (obj) => {
+    try {
+        let res = await fetch("http://localhost:4500/users/register", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        })
+        if (res) {
+            let { msg } = await res.json()
+            alert(msg)
+        }
+    } catch (error) {
+        console.log("something went wrong in login data")
+    }
+}
+
+
+
+// login user
+let matchEmail = async (obj) => {
+    try {
+        let res = await fetch("http://localhost:4500/users/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        })
+        if (res) {
+            let { msg } = await res.json()
+            alert(msg)
+        }
+    } catch (error) {
+        console.log("something went wrong in login data")
+    }
+}
 
 
 

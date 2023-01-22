@@ -4,8 +4,6 @@ const usersSingupSchema = mongoose.Schema({
     name : String,
     email : String,
     country : String,
-    address : String,
-    number : Number,
     password : String,
 
 })
