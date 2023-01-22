@@ -41,7 +41,6 @@
 }
 
 /*  */
-
 .navright {
     /* border: 1px solid red; */
     width: 13%;
@@ -276,64 +275,79 @@
 }
 
 /* ========================CLOTHES WRAP================================ */
-.header{
-    /* border: 1px solid rebeccapurple; */
-    height: 50px;
+.imageshow{
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 5px 15px;
-    border-bottom: 1px solid grey;
-}
-.header>p:nth-child(2){
-    font-size: 20px;
-    margin-left: 250px;
-    font-weight: 540;
-    
-}
-.header>div>span{
-    color: grey;
-}
-.header>div>select{
-    border: 1px solid grey;
-    outline: none;
-    height: 25px;
-    width: 160px;
-    font-size: 17px;
 }
 
-.imageWrap{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-}
-
-.sort>h3, .sort>p{
-    margin: 20px;
-}
-.sort>select{
-    border: 0px;
-    outline: none;
-    display: block;
-    width: 350px;
-    height: 30px;
-    border-bottom: 1px solid grey;
-    margin: 20px;
-    font-size: 20px;
-}
-
-.allclothes{
-    /* border: 1px solid red; */
+.img{
+    /* border: 1px solid blue; */
+    width: 60%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 10px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 20px;
 }
-.allclothes img{
+.img>img{
     width: 100%;
 }
-.allclothes i{
-    font-size: 12px;
+
+.details{
+    /* border: 1px solid green; */
+    width: 35%;
+}
+.details a{
+    color: grey;
+}
+.rating{
+    /* border: 1px solid red; */
+    margin: 10px;
+}
+.rating i{
+    font-size: 13px;
+}
+.details p{
+    margin: 10px;
+}
+
+.smallImg>img{
+    width: 50px;
+    margin: 10px;
+}
+
+.sizeBtn{
+    /* border: 1px solid rebeccapurple; */
+    margin: 10px;
+}
+
+.sizeBtn>button{
+    padding: 17px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.sizeBtn>button:hover{
+    background-color: black;
+    color: white;
+}
+
+.cartBtn{
+    margin: 10px;
+    width: 370px;
+    height: 70px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+}
+.cartBtn:hover{
+    background-color: grey;
+    border: 0px;
 }
 
 

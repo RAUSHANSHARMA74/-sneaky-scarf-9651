@@ -38,7 +38,155 @@
 .logo>p>a{
     color: grey;
 }
+/*  */
 
+.navright {
+    /* border: 1px solid red; */
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.navright i {
+    font-size: 25px;
+}
+
+.glass {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.hoverglass {
+    /* border: 1px solid blue; */
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    width: 450px;
+    height: 600px;
+    right: -205px;
+}
+
+.hoverglass>div {
+    /* border: 1px solid blue; */
+    border-bottom: 2px solid black;
+    width: 90%;
+    margin: 30px;
+    display: flex;
+}
+
+.hoverglass p {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hoverglass a {
+    display: block;
+    margin: 20px 30px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.hoverglass input {
+    border: 0px;
+    width: 400px;
+    outline: none;
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+.glass:hover .hoverglass {
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.user {
+    position: relative;
+}
+.user:hover .hoveruser{
+    visibility: visible;
+}
+
+.hoveruser {
+      /* border: 1px solid blue; */
+      position: absolute;
+      visibility: hidden;
+      background-color: white;
+      width: 450px;
+      height: 600px;
+      right: -130px;
+}
+.userreward{
+    /* border: 1px solid red; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 250px;
+    padding-top: 20px;
+}
+.userreward>p:nth-child(1){
+    font-size: 35px;
+    margin: 25px;
+}
+.userreward a{
+    color: white;
+}
+.join{
+    padding: 10px 30px;
+    border: 0px;
+    background-color: white;
+    margin: 20px;
+}
+.join>a{
+    text-decoration: none;
+    color: black;
+}
+.join:hover{
+    padding: 10px 30px;
+    border: 0px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+.signin{
+    padding: 10px 50px;
+    border: 0px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+.signin:hover{
+    padding: 10px 50px;
+    border: 0px;
+    background-color: white;
+    color: black;
+}
+.credit{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    font-weight: bold;
+}
+.credit>p{
+    margin-left: 20px;
+}
+
+.bill{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    font-weight: bold;
+}
+
+.bill>p{
+    margin-left: 20px;
+}
+
+/*  */
 
 
 .section{

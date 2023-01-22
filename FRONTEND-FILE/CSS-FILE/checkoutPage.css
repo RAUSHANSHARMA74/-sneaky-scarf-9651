@@ -41,7 +41,6 @@
 }
 
 /*  */
-
 .navright {
     /* border: 1px solid red; */
     width: 13%;
@@ -276,64 +275,210 @@
 }
 
 /* ========================CLOTHES WRAP================================ */
-.header{
-    /* border: 1px solid rebeccapurple; */
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 15px;
-    border-bottom: 1px solid grey;
-}
-.header>p:nth-child(2){
-    font-size: 20px;
-    margin-left: 250px;
-    font-weight: 540;
-    
-}
-.header>div>span{
-    color: grey;
-}
-.header>div>select{
-    border: 1px solid grey;
-    outline: none;
-    height: 25px;
-    width: 160px;
-    font-size: 17px;
-}
-
-.imageWrap{
+.checkout{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
 }
-
-.sort>h3, .sort>p{
-    margin: 20px;
+.checkout>div:nth-child(1){
+    /* border: 1px solid black; */
+    width: 65%;
 }
-.sort>select{
-    border: 0px;
-    outline: none;
-    display: block;
-    width: 350px;
-    height: 30px;
+
+.checkout>div:nth-child(2){
+    /* border: 1px solid black; */
+    width: 30%;
+}
+
+.checkoutTop{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.checkoutTop>button{
+    margin: 50px;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+}
+.checkoutTop>div{
+    margin: 50px;
+}
+.checkoutTop>div>p{
+    margin: 20px auto;
+}
+.bag{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
     border-bottom: 1px solid grey;
-    margin: 20px;
+}
+.bag h3{
+    font-size: 30px;
+}
+.bag a{
+    color: grey;
+}
+.showProducts{
+    margin-top: 50px;
+}
+.append{
+    border: 1px solid grey;
+   border-bottom: 0px;
+    width: 90;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.append img{
+    width: 170px;
+   
+}
+.showDetails{
+    /* border: 1px solid red; */
+    margin: 0px 10px;
+    width: 250px;
+}
+.showDetails p{
+    margin: 10px;
+}
+
+.shiping{
+    border: 1px solid grey;
+    width: 200px;
+}
+.shiping p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+.shiping p{
+    margin: 10px;
+}
+.pickup{
+    border: 1px solid grey;
+    width: 200px;
+}
+.pickup a{
+    color: grey;
+}
+.pickup p:nth-child(1){
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.pickup p:nth-child(2){
+    margin: 10px;
+    margin-top: 150px;
+
+}
+.handle{
+    border: 1px solid grey;
+    border-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    margin-bottom: 20px;
+}
+.handle>div{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+.price{
+    color: black;
+    font-weight: bold;
+}
+.handle>div:nth-child(1){
+    width: 20%;
+    font-weight: bold;
     font-size: 20px;
 }
+.handle>div:nth-child(2){
+    width:30%;
+}
+.handle>div:nth-child(2)>p{
+    text-decoration: underline;
+}
+.topRight{
+    border: 1px solid black;
+    height: 250px;
+    background-color: black;
+}
+.topRight p{
+    margin: 20px;
+    color: white;
+}
+.topRight p:nth-child(1){
+    font-size: 20px;
+}
+.topRight p:nth-child(2){
+    font-size: 25px;
+}
 
-.allclothes{
-    /* border: 1px solid red; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 10px 20px;
+.topRight P:last-child{
+    border: 1px solid white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
-.allclothes img{
-    width: 100%;
+.right p{
+    margin: 15px;
 }
-.allclothes i{
-    font-size: 12px;
+.right h3{
+    margin: 15px;
+    font-size: 30px;
+}
+
+.promo{
+    border: 1px solid;
+    margin: 15px;
+}
+
+.deliveryDetails{
+    border: 1px solid grey;
+    width: 92%;
+    margin: 10px auto;
+}
+
+.deliveryDetails p{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deliveryDetails b{
+    border: 1px solid grey;
+    padding: 20px;
+}
+.deliveryDetails p:nth-child(6){
+    border: 0px;
+}
+
+.checkoutbtn{
+   margin: 15px;
+   height: 50px;
+   width: 90%;
+   font-size: 20px;
+   font-weight: bold;
+   background-color: black;
+   color: white;
+}
+
+.checkoutbtn:hover{
+    background-color: grey;
+    border: 0px;
+    transition: 0.5s;
 }
 
 

@@ -4,22 +4,23 @@ const users = express.Router()
 const {UsersSingupModel} = require("../modelFile/usersModel")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
+
 require("dotenv").config()
 
-//GET USERS DATA
-users.get("/", async (req, res)=>{
-    try {
-        let usersData = await UsersSingupModel.find()
-        res.send(usersData)
-    } catch (error) {
-        console.log("something went wrong in GET users data")
-    }
-})
+// //GET USERS DATA
+// users.get("/", async (req, res)=>{
+//     try {
+//         let usersData = await UsersSingupModel.find()
+//         res.send(usersData)
+//     } catch (error) {
+//         console.log("something went wrong in GET users data")
+//     }
+// })
 
 //REGISTER USERS
 users.post("/register", async (req, res)=>{
     try {
-        let {name, email, address, password, country, number} = req.body
+        let {name, email, password, country} = req.body
         let matchEmail = await UsersSingupModel.find({email})
         if(matchEmail.length>0){
             res.send({msg:"email is already register"})
@@ -29,7 +30,7 @@ users.post("/register", async (req, res)=>{
                 if(err){
                     res.send({msg:"something error in hashPassword"})
                 }else{
-                    const register = new UsersSingupModel({name, email, number, country, address, password:hashPassword})
+                    const register = new UsersSingupModel({name, email, country, password:hashPassword})
                     await register.save()
                     res.send({msg: "singup successfull"})
                 }

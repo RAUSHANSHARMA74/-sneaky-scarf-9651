@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS-FILE/allMensClothes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
         <!--  -->
         <div class="section">
             <div class="women">
-                <a href="">WOMEN</a>
+                <a href="./womensPage.html">WOMEN</a>
                 <div class="womenhide">
                     <div>
                         <h5>CLOTHING</h5>
@@ -102,7 +103,7 @@
 
 
             <div class="mens">
-                <a href="">MEN</a>
+                <a href="./mensPage.html">MEN</a>
                 <div class="menhide">
                     <div>
                         <h5>CLOTHING</h5>
@@ -204,11 +205,10 @@
             <p>MEN'S SHIRTS, SWEATERS, TEES & POLOS</p>
           <div>
             <span>Sort By :</span>
-            <select name="" id="">
+            <select name="" id="select">
                 <option value="all">Relevance</option>
                 <option value="lth">Price Low to High</option>
                 <option value="htl">Price Hight to Low</option>
-                <option value="new">New Arrivals</option>
             </select>
           </div>
         </div>
@@ -216,12 +216,12 @@
         <div class="imageWrap">
             <div class="sort">
                 <h3>BROWSER BY:</h3>
-                <select name="" id="">
+                <select onchange="shirts()" name="" id="shirts">
                     <option value="Button">Button Down Shirts</option>
                     <option value="Flannel">Flannel Shirts</option>
                     <option value="Polos">Polos</option>
                     <option value="T-Shirts">T-Shirts</option>
-                    <option value="Sweaters">Sweaters</option>
+                    <option value="Sweaters">Sweater</option>
                     <option value="SWeater Polos">SWeater Polos</option>
                     <option value="Hoodies">Sweatshirts & Hoodies</option>
                     <option value="Casual">Casual Button Down Shirts</option>
@@ -229,20 +229,20 @@
                     <option value="Activewear">Activewear</option>
                 </select>
                 <p>FILTER BY: <b>price</b></p>
-                <select name="" id="">
+                <select onchange="length()" name="" id="length">
                     <option value="all">SLEEVE LENGTH</option>
                     <option value="long">Long</option>
                     <option value="short">Short</option>
                     <option value="sleeveless">Sleeveless</option>
                 </select>
-                <select name="" id="">
+                <select onchange="fit()" name="" id="fit">
                     <option value="all">FIT</option>
                     <option value="">Slim</option>
                     <option value="">classic</option>
                     <option value="">Extra Slim</option>
                     <option value="">Relaxed</option>
                 </select>
-                <select name="" id="">
+                <select onchange="type()" name="" id="type">
                     <option value="all">TYPE</option>
                     <option value="button">Button Down Shirts</option>
                     <option value="tees">Tees & Henleys</option>
@@ -254,15 +254,15 @@
                     <option value="bomber">Bomber</option>
                     <option value="shirts">Shirts</option>
                 </select>
-                <select name="" id="">
-                    <option value="all">PRICE</option>
-                    <option value="30">0.00-29.99</option>
-                    <option value="60">30.00-59.99</option>
-                    <option value="90">60.00-89.99</option>
-                    <option value="120">90.00-119.99</option>
-                    <option value="150">120.00-149.99</option>
+                <select onchange="price()" name="" id="price">
+                    <option value="0">PRICE</option>
+                    <option value="30">29</option>
+                    <option value="60">59</option>
+                    <option value="90">89</option>
+                    <option value="120">119</option>
+                    <option value="150">149</option>
                 </select>
-                <select name="" id="">
+                <select onchange="size()" name="" id="size">
                     <option value="all">SIZES</option>
                     <option value="xl">XL</option>
                     <option value="s">S</option>
@@ -272,7 +272,7 @@
                     <option value="xxl">XXL</option>
                 </select>
 
-                <select name="" id="">
+                <select onchange="set()" name="" id="">
                     <option value="fourlaps">FOURLAPS</option>
                     <option value="upwest">UPWEST</option>
                 </select>
@@ -280,6 +280,23 @@
             </div>
 
             <div class="allclothes">
+                <!-- all clothes append -->
+               
+                <!-- <div>
+                    <img src="https://images.express.com/is/image/expressfashion/0039_04350006_0098_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon" alt="">
+                    <p>Online Only</p>
+                    <p>title</p>
+                    <p>price</p>
+                   <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>rating</span>
+                    <span>(5)</span>
+                   </div>
+                </div> -->
 
             </div>
         </div>

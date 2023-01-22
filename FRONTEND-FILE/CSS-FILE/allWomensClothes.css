@@ -14,6 +14,7 @@
     align-items: center;
     font-size: 12px;
     padding:5px 10px;
+    
 }
 .top a{
     color: white;
@@ -38,15 +39,162 @@
 .logo>p>a{
     color: grey;
 }
+/*  */
 
+.navright {
+    /* border: 1px solid red; */
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
 
+.navright i {
+    font-size: 25px;
+}
 
+.glass {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.hoverglass {
+    /* border: 1px solid blue; */
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    width: 450px;
+    height: 600px;
+    right: -205px;
+}
+
+.hoverglass>div {
+    /* border: 1px solid blue; */
+    border-bottom: 2px solid black;
+    width: 90%;
+    margin: 30px;
+    display: flex;
+}
+
+.hoverglass p {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hoverglass a {
+    display: block;
+    margin: 20px 30px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.hoverglass input {
+    border: 0px;
+    width: 400px;
+    outline: none;
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+.glass:hover .hoverglass {
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.user {
+    position: relative;
+}
+.user:hover .hoveruser{
+    visibility: visible;
+}
+
+.hoveruser {
+      /* border: 1px solid blue; */
+      position: absolute;
+      visibility: hidden;
+      background-color: white;
+      width: 450px;
+      height: 600px;
+      right: -130px;
+}
+.userreward{
+    /* border: 1px solid red; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 250px;
+    padding-top: 20px;
+}
+.userreward>p:nth-child(1){
+    font-size: 35px;
+    margin: 25px;
+}
+.userreward a{
+    color: white;
+}
+.join{
+    padding: 10px 30px;
+    border: 0px;
+    background-color: white;
+    margin: 20px;
+}
+.join>a{
+    text-decoration: none;
+    color: black;
+}
+.join:hover{
+    padding: 10px 30px;
+    border: 0px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+.signin{
+    padding: 10px 50px;
+    border: 0px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+.signin:hover{
+    padding: 10px 50px;
+    border: 0px;
+    background-color: white;
+    color: black;
+}
+.credit{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    font-weight: bold;
+}
+.credit>p{
+    margin-left: 20px;
+}
+
+.bill{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    font-weight: bold;
+}
+
+.bill>p{
+    margin-left: 20px;
+}
+
+/*  */
 .section{
     /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
+    margin-bottom: 50px;
 }
 .section>div>a{
    margin-left: 50px;
@@ -125,244 +273,70 @@
     margin-top: 10px;
 }
 
-
-/* Image */
-
-
-
-/* Image */
-
-.discount{
-    /* border: 1px solid red; */
-    background-color: black;
-    color: white;
-    height: 130px;
+/* ========================CLOTHES WRAP================================ */
+.header{
+    /* border: 1px solid rebeccapurple; */
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 15px;
+    border-bottom: 1px solid grey;
 }
-.childDiscount1{
-    /* border: 1px solid blue; */
-    margin-left: 90px;
-}
-.childDiscount1>p:nth-child(1){
-    font-size: 30px;
-}
-.childDiscount1>p:nth-child(2){
-    font-size: 50px;
-}
-.childDiscount2{
-    margin-right: 50px;
-}
-.childDiscount2>p{
-    font-size: 11px;
-}
-.childDiscount2>a{
-    color: white;
-}
-
-/* Image */
-.difClothes{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 30px auto;
-}
-
-.difClothes img{
-    width: 100%;
-}
-.difClothes a{
-   color: black;
-}
-
-/* image */
-
-.styleClothes+p{
-    /* border: 1px solid red; */
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-/* image */
-.styleClothes{
-    /* border: 1px solid red; */
-    width: 63%;
-    margin:30px auto;  
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-.styleClothes img{
-    width: 100%;
-}
-.styleClothes p{
-    font-size: 30px;
-    margin: 15px 0px;
+.header>p:nth-child(2){
+    font-size: 40px;
+    margin-left: 250px;
     font-weight: 600;
+    
+}
+.header>div>span{
+    color: grey;
+}
+.header>div>select{
+    border: 1px solid grey;
+    outline: none;
+    height: 25px;
+    width: 160px;
+    font-size: 17px;
 }
 
-.styleClothes a{
-    color: black;
-    font-size: 18px;
-}
-
-/* image */
-.icons{
+.imageWrap{
     /* border: 1px solid red; */
-    width: 80%;
-    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sort>h3, .sort>p{
+    margin: 20px;
+}
+.sort>select{
+    border: 0px;
+    outline: none;
+    display: block;
+    width: 350px;
+    height: 30px;
+    border-bottom: 1px solid grey;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.allclothes{
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    text-align: center;
+    padding: 10px 20px;
 }
-.icons img{
+.allclothes img{
     width: 100%;
 }
-
-.icons p{
-    font-size: 25px;
-    font-weight: 600;
-    margin: 10px 0px;
-}
-
-.icons a{
-    color: black;
-    font-size: 18px;
-}
-
-.ourcoummunity>p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 50px ;
-    
-}
-
-.ourcoummunity+p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 50px;
+.allclothes i{
+    font-size: 12px;
 }
 
 
 
-/* image */
-.ourcoummunity{
-    /* border: 1px solid red; */
-    margin: 50px auto;
-    padding: 30px 0px;
-    padding-bottom: 100px;
-    background-color: lightgrey;
-
-}
-.communityClothes{
-    /* border: 1px solid blue; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    gap: 20px;
-    padding: 0px 20px;
-}
-.communityClothes img{
-    width: 100%;
-}
-.communityClothes p{
-    font-size: 20px;
-    font-weight: 700;
-    margin: 10px;
-}
-.communityClothes a{
-    color: black;
-}
-
-/* image */
-
-
-.fashion+button{
-    border: 2px solid black;
-    background-color: white;
-    font-weight: bold;
-    margin: 50px;
-    margin-left: 42%;
-    padding: 15px 50px;
-}
-.fashion+button:hover{
-    border: 2px solid grey;
-    background-color: grey;
-    color: white;
-}
-.easy{
-    /* border: 1px solid red; */
-    text-align: center;
-    font-size: 30px;
-    margin-top: 100px;
-    border-top: 1px solid grey;
-    padding-top: 50px;
-}
-.easyWay{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
-    text-align: center;
-}
-.easyWay>div{
-    /* border: 1px solid red; */
-    border-right: 2px solid grey;
-    width: 100%;
-    height: 150px;
-}
-.easyWay a{
-    color: black;
-    margin-top: 50px;
-}
-
-.easyWay>div>p:nth-child(1){
-    font-weight: bold;
-    font-family:serif;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.easyWay>div>p:nth-child(2){
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.easyWay>div>p:nth-child(4){
-    margin-bottom: 20px;
-}
-
-/* image */
-.fashion{
-    /* border: 1px solid red; */
-    width: 95%;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    text-align: center;
-}
-
-.fashion img{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.fashion a{
-    color: black;
-    font-size: 18px;
-}
-
-/* image */
+/* ========================FOOTER PART============================ */
 
 .footer{
     /* border: 1px solid red; */
