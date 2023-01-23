@@ -35,7 +35,11 @@ singup.addEventListener("click", () => {
                 email: email.value,
                 password: password.value,
             }
-            matchEmail(obj)
+            if(obj.email=="admin@gmail.com" && obj.password=="admin"){
+                window.location.href = "../HTML-FILE/adminPage.html"
+            }else{
+                matchEmail(obj)
+            }
         })
 
     } else if (btntext.innerText == "SING UP") {
@@ -196,6 +200,9 @@ let matchEmail = async (obj) => {
         if (res) {
             let { msg } = await res.json()
             alert(msg)
+            if(msg=="login succesfull"){
+                window.location.href = "../index.html"
+            }
         }
     } catch (error) {
         console.log("something went wrong in login data")
@@ -206,3 +213,9 @@ let matchEmail = async (obj) => {
 
 
 
+
+
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "./index.html"
+})

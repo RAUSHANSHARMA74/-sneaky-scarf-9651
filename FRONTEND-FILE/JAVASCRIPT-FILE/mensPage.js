@@ -5,3 +5,8 @@ for(let image of img){
         window.location.href = "../HTML-FILE/allMensClothes.html"
     })
 }
+
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "./index.html"
+})

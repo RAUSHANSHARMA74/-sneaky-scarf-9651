@@ -66,7 +66,7 @@ function type(){
 function price(){
     let select = document.querySelector("#price").value
     let data = globalData.filter((item)=>{
-        return  Number(select)<item.price.replace(/[$,]/g, '')
+        return  Number(select)>item.price.replace(/[$,]/g, '')
     })
     showData(data)
     // console.log(data)
@@ -122,4 +122,8 @@ function showData(allProducts) {
 
 
 
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "./index.html"
+})
 
