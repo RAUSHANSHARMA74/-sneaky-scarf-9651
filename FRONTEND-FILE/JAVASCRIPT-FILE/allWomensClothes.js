@@ -1,7 +1,9 @@
 
+
+let url = "https://fashion-style-backend.onrender.com"
 async function getMenProducts() {
     try {
-        let res = await fetch("http://localhost:4500/admin/womensProducts")
+        let res = await fetch(`${url}/admin/womensProducts`)
         if (res) {
             let allProducts = await res.json()
             showData(allProducts)
@@ -57,3 +59,10 @@ function showData(allProducts) {
     // console.log(data.join(""))
     show.innerHTML = data.join("")
 }
+
+
+
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "../index.html"
+})

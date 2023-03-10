@@ -1,4 +1,4 @@
-
+let url = "https://fashion-style-backend.onrender.com"
 let register = document.querySelector(".clear")
 let btntext = document.querySelector(".singin")
 let pText = document.querySelector(".registerbtn>p")
@@ -169,7 +169,7 @@ createAccount.addEventListener("click", () => {
 //register user
 let regiseruser = async (obj) => {
     try {
-        let res = await fetch("http://localhost:4500/users/register", {
+        let res = await fetch(`${url}/users/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -190,7 +190,7 @@ let regiseruser = async (obj) => {
 // login user
 let matchEmail = async (obj) => {
     try {
-        let res = await fetch("http://localhost:4500/users/login", {
+        let res = await fetch(`${url}/users/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -211,11 +211,7 @@ let matchEmail = async (obj) => {
 
 
 
-
-
-
-
 let log = document.querySelector(".logo")
 log.addEventListener("click", ()=>{
-    window.location.href = "./index.html"
+    window.location.href = "../index.html"
 })

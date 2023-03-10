@@ -2,7 +2,7 @@ let add = document.querySelector(".add")
 let total = document.querySelector(".totalProduct")
 let show = document.querySelector(".appenddiv")
 
-
+let url = "https://fashion-style-backend.onrender.com"
 //---ALL PRODUCTS
 let all = document.querySelector(".allProducts")
 all.addEventListener("click", async () => {
@@ -13,7 +13,7 @@ all.addEventListener("click", async () => {
     let show = document.querySelector(".appenddiv")
     show.innerHTML = ""
     try {
-        const res = await fetch("http://localhost:4500/admin/allProducts")
+        const res = await fetch(`${url}/admin/allProducts`)
         if (res) {
             let allProductsData = await res.json()
             // console.log(allProductsData)
@@ -87,7 +87,7 @@ mens.addEventListener("click", async () => {
     `
    
     try {
-        const res = await fetch("http://localhost:4500/admin/mensProducts")
+        const res = await fetch(`${url}/admin/mensProducts`)
         if (res) {
             let menData = await res.json()
             // console.log(mensData)
@@ -185,7 +185,7 @@ function showMenData(menData){
 //======ADD MEN PRODUCTS=====>
 async function addmensData(obj) {
     try {
-        const res = await fetch("http://localhost:4500/admin/addMen", {
+        const res = await fetch(`${url}/admin/addMen`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -205,7 +205,7 @@ async function addmensData(obj) {
 //=======DELETE MEN PRODUCT
 async function deleteManProduct(id) {
     try {
-        const res = await fetch(`http://localhost:4500/admin/menDelete/${id}`, {
+        const res = await fetch(`${url}/admin/menDelete/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
@@ -255,7 +255,7 @@ womens.addEventListener("click", async () => {
     `
    
     try {
-        const res = await fetch("http://localhost:4500/admin/womensProducts")
+        const res = await fetch(`${url}/admin/womensProducts`)
         if (res) {
             let womensData = await res.json()
             total.innerText = "TOTAL PRODUCT" + "~~>" + womensData.length
@@ -291,7 +291,7 @@ womens.addEventListener("click", async () => {
 //==========ADD WOMEN PRODUCTS========>
 async function addwomensProducts(obj) {
     try {
-        const res = await fetch("http://localhost:4500/admin/addWomen", {
+        const res = await fetch(`${url}/admin/addWomen`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -388,7 +388,7 @@ function  showWomenProducts(womensData){
 //=======DELETE MEN PRODUCT
 async function deletewOMENProduct(id) {
     try {
-        const res = await fetch(`http://localhost:4500/admin/womenDelete/${id}`, {
+        const res = await fetch(`${url}/admin/womenDelete/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
@@ -410,15 +410,6 @@ async function deletewOMENProduct(id) {
 
 
 //========================================================================================
-
-
-
-
-
-
-
-
-
 
 //CHECKOUT PRODUCTS
 let checkout = document.querySelector(".checkoutProducts")

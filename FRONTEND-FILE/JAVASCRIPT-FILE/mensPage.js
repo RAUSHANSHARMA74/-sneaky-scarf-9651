@@ -8,5 +8,5 @@ for(let image of img){
 
 let log = document.querySelector(".logo")
 log.addEventListener("click", ()=>{
-    window.location.href = "./index.html"
+    window.location.href = "../index.html"
 })
