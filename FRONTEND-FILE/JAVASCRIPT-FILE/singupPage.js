@@ -1,4 +1,4 @@
-
+let url = "https://fashion-style-backend.onrender.com"
 let register = document.querySelector(".clear")
 let btntext = document.querySelector(".singin")
 let pText = document.querySelector(".registerbtn>p")
@@ -35,7 +35,11 @@ singup.addEventListener("click", () => {
                 email: email.value,
                 password: password.value,
             }
-            matchEmail(obj)
+            if(obj.email=="admin@gmail.com" && obj.password=="admin"){
+                window.location.href = "../HTML-FILE/adminPage.html"
+            }else{
+                matchEmail(obj)
+            }
         })
 
     } else if (btntext.innerText == "SING UP") {
@@ -165,7 +169,7 @@ createAccount.addEventListener("click", () => {
 //register user
 let regiseruser = async (obj) => {
     try {
-        let res = await fetch("http://localhost:4500/users/register", {
+        let res = await fetch(`${url}/users/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -186,7 +190,7 @@ let regiseruser = async (obj) => {
 // login user
 let matchEmail = async (obj) => {
     try {
-        let res = await fetch("http://localhost:4500/users/login", {
+        let res = await fetch(`${url}/users/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -196,6 +200,9 @@ let matchEmail = async (obj) => {
         if (res) {
             let { msg } = await res.json()
             alert(msg)
+            if(msg=="login succesfull"){
+                window.location.href = "../index.html"
+            }
         }
     } catch (error) {
         console.log("something went wrong in login data")
@@ -204,5 +211,7 @@ let matchEmail = async (obj) => {
 
 
 
-
-
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "../index.html"
+})

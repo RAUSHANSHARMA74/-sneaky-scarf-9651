@@ -1,7 +1,8 @@
 let globalData = []
+let url = "https://fashion-style-backend.onrender.com"
 async function getMenProducts() {
     try {
-        let res = await fetch("http://localhost:4500/admin/mensProducts")
+        let res = await fetch(`${url}/admin/mensProducts`)
         if (res) {
             let allProducts = await res.json()
             showData(allProducts)
@@ -66,7 +67,7 @@ function type(){
 function price(){
     let select = document.querySelector("#price").value
     let data = globalData.filter((item)=>{
-        return  Number(select)<item.price.replace(/[$,]/g, '')
+        return  Number(select)>item.price.replace(/[$,]/g, '')
     })
     showData(data)
     // console.log(data)
@@ -122,4 +123,8 @@ function showData(allProducts) {
 
 
 
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "../index.html"
+})
 

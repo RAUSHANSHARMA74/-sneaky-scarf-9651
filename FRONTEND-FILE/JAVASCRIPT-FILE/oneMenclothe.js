@@ -1,8 +1,9 @@
 let id = localStorage.getItem("id")
 // console.log(id)
+let url = "https://fashion-style-backend.onrender.com"
 const matchid = async () => {
     try {
-        const res = await fetch("http://localhost:4500/admin/mensProducts")
+        const res = await fetch(`${url}/admin/mensProducts`)
         if (res) {
             let data = await res.json()
             let match = data.filter((item) => {
@@ -44,7 +45,7 @@ const cartData = (data) => {
     cart.addEventListener("click", async ()=>{
         // console.log(data)
         try {
-            let res = await fetch("http://localhost:4500/cartProducts/addCart",{
+            let res = await fetch(`${url}/cartProducts/addCart`,{
                 method : "POST",
                 headers : {
                     "Content-Type" : "application/json"
@@ -61,3 +62,9 @@ const cartData = (data) => {
         }
     })
 }
+
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "../index.html"
+})
+

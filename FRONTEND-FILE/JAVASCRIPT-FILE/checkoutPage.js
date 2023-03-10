@@ -1,5 +1,5 @@
 
-
+let url = "https://fashion-style-backend.onrender.com"
 let checkoutbtn = document.querySelector(".checkoutbtn")
 checkoutbtn.addEventListener("click", ()=>{
     let token = localStorage.getItem("token")
@@ -12,7 +12,7 @@ checkoutbtn.addEventListener("click", ()=>{
 
 async function getcartProducts(){
     try {
-        let res = await fetch("http://localhost:4500/cartProducts")
+        let res = await fetch(`${url}/cartProducts`)
         if(res){
             let data = await res.json()
             showdata(data)
@@ -104,3 +104,10 @@ function showdata(data){
     }
    
 }
+
+
+
+let log = document.querySelector(".logo")
+log.addEventListener("click", ()=>{
+    window.location.href = "../index.html"
+})
