@@ -2,7 +2,7 @@
 express.com
 # My E-Commerce Website
 
-![Website Logo](/public/images/logo.png)
+![Website Logo](/FRONTEND-FILE/images/logo.jpg)
 
 ## Overview
 
