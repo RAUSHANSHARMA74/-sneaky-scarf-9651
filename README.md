@@ -18,8 +18,8 @@ This is a simple E-Commerce website built using HTML, CSS, JavaScript for the fr
 - Database Integration with MongoDB
 
 ## Installation
-
-1. Clone this repository: `git clone https://github.com/your-username/my-e-commerce-website.git`
+https://github.com/RAUSHANSHARMA74/-sneaky-scarf-9651.git
+1. Clone this repository: `git clone `
 2. Navigate to the project directory: `cd my-e-commerce-website`
 3. Install dependencies: `npm install`
 4. Start the server: `npm start`
