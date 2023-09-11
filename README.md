@@ -40,13 +40,3 @@ This is a simple E-Commerce website built using HTML, CSS, JavaScript for the fr
 ![Screenshot 1](/public/images/screenshot1.png)
 ![Screenshot 2](/public/images/screenshot2.png)
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Author
-
-- Your Name
-- Contact: your.email@example.com
-
-Feel free to customize this README file further to provide more specific details about your project. Add any additional sections or information that you think is necessary.
